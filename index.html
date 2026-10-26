@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form Collector</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <h2>Contact Collector</h2>
+    <a href="/contacts">View All Contacts</a>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1>Contact Us</h1>
+      <p class="subtitle">
+        Have a question? Send us a message.
+      </p>
+
+      <form id="contactForm">
+        <label for="name">Full Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        >
+
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        >
+
+        <label for="message">Your Message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Write your message..."
+          required
+        ></textarea>
+
+        <button type="submit" id="submitBtn">
+          Send Message
+        </button>
+
+        <p id="statusMessage" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact Form Collector &copy; 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
